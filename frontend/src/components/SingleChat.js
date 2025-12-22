@@ -9,7 +9,8 @@ import ScrollableChat from "./ScrollableChat";
 
 // Import Socket.io
 import io from "socket.io-client";
-const ENDPOINT = "http://localhost:5000"; // Location of our backend
+// const ENDPOINT = "http://localhost:5000"; // <--- DELETE THIS
+const ENDPOINT = "https://sahil-chat-backend.onrender.com"; // <--- USE THIS
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
