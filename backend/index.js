@@ -38,7 +38,10 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000", // Allow the Frontend to connect
+    origin: [
+      "http://localhost:3000", 
+      "https://your-vercel-app-name.vercel.app" // <--- PASTE YOUR COPIED LINK HERE
+    ],
   },
 });
 
