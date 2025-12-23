@@ -40,7 +40,7 @@ const io = require("socket.io")(server, {
   cors: {
     origin: [
       "http://localhost:3000", 
-      "https://mern-chat-ap-steel.vercel.app/" // <--- PASTE YOUR COPIED LINK HERE
+      "https://mern-chat-ap-steel.vercel.app" // <--- PASTE YOUR COPIED LINK HERE
     ],
   },
 });
